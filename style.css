@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* HEADER */
+
+header {
+    background: #0f172a;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.signup-btn {
+    background: #2563eb;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, .85),
+            rgba(15, 23, 42, .85)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+    margin: 5px;
+
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* PAGE TITLE */
+
+.page-title {
+    background: #1e3a8a;
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin: 15px 0 8px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* AUDIO */
+
+audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+/* VIDEO */
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* DOWNLOAD */
+
+.download-btn {
+    display: block;
+
+    background: #16a34a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #15803d;
+}
+
+
+/* LOGIN & SIGNUP */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e3a8a,
+            #0f172a
+        );
+}
+
+.auth-box {
+    width: 90%;
+    max-width: 420px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.3);
+
+    text-align: center;
+}
+
+.auth-box h1 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.auth-box p {
+    margin-bottom: 20px;
+}
+
+.auth-box form {
+    text-align: left;
+}
+
+.auth-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.auth-box button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background: #1d4ed8;
+}
+
+.auth-box a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #0f172a;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+}
